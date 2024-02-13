@@ -1,0 +1,97 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh; /* Adjust based on your layout */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: black;
+    max-width: 60%;
+    word-wrap: break-word;
+  }
+  
+  .message.user {
+    background-color: #4CAF50; /* Green background */
+    align-self: flex-end; /* Align user messages to the right */
+  }
+  
+  .message.bot {
+    background-color: #333; /* Black background */
+    color: white;
+    align-self: flex-start; /* Keep bot messages on the left */
+  }
+  
+  .message-form {
+    display: flex;
+    justify-content: center; /* Center the form in the container */
+    padding: 10px;
+    background-color: #fff; /* Match the chat container background */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .message-form .link-button {
+    background-color: #ff6868; /* Light red background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Spacing between this button and the textarea */
+    cursor: pointer;
+  }
+  
+  .message-form .link-button:hover {
+    background-color: #ff5757; /* Slightly darker red on hover */
+  }
+  
+  .message-form input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: auto; /* Allows scrolling */
+    height: auto; /* Start with default height */
+    max-height: 100px; /* Maximum height before scrolling */
+    resize: none; /* Prevent manual resizing */
+  }
+
+  .message-form textarea {
+    width: 50%; /* Make the textarea occupy half of the screen width */
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow-y: auto; /* Allows vertical scrolling */
+    height: auto; /* Start with default height */
+    max-height: 150px; /* Maximum height before scrolling */
+    resize: vertical; /* Allow only vertical resizing */
+  }
+  
+  .message-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    cursor: pointer;
+    align-self: flex-end; /* Align the button with the bottom of the textarea */
+  }
+  
+  .message-form button:hover {
+    background-color: #45a049;
+  }
+
+
+  
